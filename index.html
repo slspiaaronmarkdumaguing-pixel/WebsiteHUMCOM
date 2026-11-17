@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FactCheck.Health | Fact Check. Live Healthier.</title>
+<meta name="description" content="Get the facts, not the myths. Search health claims and find the truth.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="FactCheck.Health home">
+    <img src="images/logo-apple.png" alt="">
+    <span>FACTCHECK.HEALTH</span>
+  </a>
+
+  <!-- CSS-only mobile menu -->
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+  <label for="menu-toggle" class="menu-btn" aria-hidden="true">&#9776;</label>
+
+  <nav class="nav" aria-label="Main">
+    <ul class="nav-links">
+      <li class="has-dropdown">
+        <a href="index.html" aria-haspopup="true">Home</a>
+        <!-- Appears the instant the mouse is over "Home" (CSS only) -->
+        <div class="dropdown">
+          <ul class="dropdown-panel">
+            <li><a href="resources.html">Trusted<br>Resources</a></li>
+            <li><a href="contact.html">Contact<br>Us</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="crisis-updates.html">Crisis<br>Updates</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="myths.html">Myths</a></li>
+      <li><a href="videos.html">Videos</a></li>
+      <li><a href="submit-claim.html">Submit</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <form class="mini-search" action="search-results.html" method="get" role="search">
+        <input type="search" name="q" placeholder="Search..." aria-label="Search">
+        <button type="submit" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#33382b" stroke-width="3.2" stroke-linecap="round"><circle cx="10" cy="10" r="6.5"/><path d="M15 15l6 6"/></svg>
+        </button>
+      </form>
+      <a href="about.html">About</a>
+      <a href="saved.html" aria-label="Saved"><svg viewBox="0 0 24 24"><path d="M12 20.5s-8-4.9-8-11A4.6 4.6 0 0 1 12 6.8a4.6 4.6 0 0 1 8 2.7c0 6.100-8 11-8 11z"/></svg></a>
+      <a href="account.html" aria-label="Account"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="9.500" r="3.500"/><path d="M5.500 19c1.500-3 4-4 6.500-4s5 1 6.500 4"/></svg></a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home" aria-labelledby="hero-title">
+  <img class="hero-basket" src="images/hero-basket.png" alt="Wicker basket with an apple, lemons, a banana and clovers">
+
+  <div class="hero-copy">
+    <h1 id="hero-title">Fact Check<br>Live Healthier.</h1>
+    <p class="tag">Get the facts, not the myths.</p>
+    <a class="btn btn-lg" href="articles.html">Explore Articles
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9h11V4l8 8-8 8v-5H3z"/></svg>
+    </a>
+  </div>
+
+  <div class="week-card">
+    <h2>This week’s Myth vs Fact</h2>
+    <blockquote>“Eating sugar causes immediate diabetes.”</blockquote>
+    <a class="btn btn-sm" href="fact-check-article.html">See the results
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9h11V4l8 8-8 8v-5H3z"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ================= MYTH OR FACT? (search) ================= -->
+<section class="search-section" id="search" aria-labelledby="search-title">
+  <img class="deco clover-tr" src="images/clover-top-right.png" alt="">
+  <img class="deco hills" src="images/hills-clover-left.png" alt="">
+  <img class="deco steth" src="images/stethoscope.png" alt="">
+
+  <h2 id="search-title">Myth or Fact?</h2>
+  <p class="sub">Search health claims and find the truth</p>
+
+  <form class="big-search" action="search-results.html" method="get" role="search">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M15.500 15.500L22 22"/></svg>
+    <input type="search" name="q" placeholder="Search a myth..." aria-label="Search a myth">
+  </form>
+
+  <div class="popular">
+    <h3>Popular searches:</h3>
+    <ul class="chips">
+      <li><a href="search-results.html?q=vaccines">Vaccines</a></li>
+      <li><a href="search-results.html?q=sugar">Sugar</a></li>
+      <li><a href="search-results.html?q=coffee">Coffee</a></li>
+      <li><a href="search-results.html?q=exercise">Exercise</a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER (structure only, add your content) ================= -->
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <!-- Logo / short description -->
+    </div>
+    <div class="footer-col">
+      <h4><!-- Column title --></h4>
+      <ul><!-- <li><a href="#">Link</a></li> --></ul>
+    </div>
+    <div class="footer-col">
+      <h4><!-- Column title --></h4>
+      <ul><!-- links --></ul>
+    </div>
+    <div class="footer-col">
+      <h4><!-- Column title --></h4>
+      <ul><!-- links --></ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <!-- Copyright / legal -->
+  </div>
+</footer>
+
+</body>
+</html>

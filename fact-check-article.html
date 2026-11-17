@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sugar causes immediate diabetes | FactCheck.Health</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ================= HEADER (same on every page) ================= -->
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="FactCheck.Health home">
+    <img src="images/logo-apple.png" alt="">
+    <span>FACTCHECK.HEALTH</span>
+  </a>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+  <label for="menu-toggle" class="menu-btn" aria-hidden="true">&#9776;</label>
+  <nav class="nav" aria-label="Main">
+    <ul class="nav-links">
+      <li class="has-dropdown">
+        <a href="index.html" aria-haspopup="true">Home</a>
+        <!-- Appears the instant the mouse is over "Home" (CSS only) -->
+        <div class="dropdown">
+          <ul class="dropdown-panel">
+            <li><a href="resources.html">Trusted<br>Resources</a></li>
+            <li><a href="contact.html">Contact<br>Us</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="crisis-updates.html">Crisis<br>Updates</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="myths.html">Myths</a></li>
+      <li><a href="videos.html">Videos</a></li>
+      <li><a href="submit-claim.html">Submit</a></li>
+    </ul>
+    <div class="nav-right">
+      <form class="mini-search" action="search-results.html" method="get" role="search">
+        <input type="search" name="q" placeholder="Search..." aria-label="Search">
+        <button type="submit" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#33382b" stroke-width="3.2" stroke-linecap="round"><circle cx="10" cy="10" r="6.5"/><path d="M15 15l6 6"/></svg>
+        </button>
+      </form>
+      <a href="about.html">About</a>
+      <a href="saved.html" aria-label="Saved"><svg viewBox="0 0 24 24"><path d="M12 20.5s-8-4.9-8-11A4.6 4.6 0 0 1 12 6.8a4.6 4.6 0 0 1 8 2.7c0 6.1-8 11-8 11z"/></svg></a>
+      <a href="account.html" aria-label="Account"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="9.5" r="3.5"/><path d="M5.5 19c1.5-3 4-4 6.5-4s5 1 6.500 4"/></svg></a>
+    </div>
+  </nav>
+</header>
+
+<!-- For a FACT article: change "article--myth" to "article--fact",
+     and change the badge to:  <span class="badge badge--fact badge--wide">Fact</span> -->
+<main class="page page--article article--myth">
+  <img class="deco clover-tr" src="images/clover-top-right.png" alt="">
+  <img class="deco clover-bl" src="images/clover-bottom-left.png" alt="">
+
+  <div class="wrap article-layout">
+    <span class="badge badge--myth badge--wide">Myth</span>
+
+    <!-- LEFT photo -->
+    <figure class="article-img article-img--left">
+      <img src="images/article-candy-left.png" alt="Pile of assorted candy bars and wrappers">
+    </figure>
+
+    <!-- MIDDLE: title, sources, article text -->
+    <article class="article-main">
+      <div class="head-row">
+        <div class="title-card">
+          <h1>Sugar causes<br>immediate<br>diabetes.</h1>
+          <img src="images/apple-sparkle.png" alt="">
+        </div>
+        <aside class="sources" aria-label="Sources">
+          <p>Sources:</p>
+          <p class="links">
+            <a href="https://www.who.int" target="_blank" rel="noopener">WHO</a> |
+            <a href="https://www.cdc.gov" target="_blank" rel="noopener">CDC</a> |
+            <a href="https://www.nih.gov" target="_blank" rel="noopener">NIH</a>
+          </p>
+        </aside>
+      </div>
+
+      <div class="article-body">
+        <p><strong>The truth:</strong> The claim that eating sugar causes immediate diabetes is a misconception. Consuming sugary foods or drinks does not automatically cause a person to develop diabetes. Diabetes is a medical condition that develops due to <strong>problems with how the body produces or uses insulin</strong>, a hormone responsible for regulating blood glucose levels.</p>
+        <p>There are different types of diabetes. <strong>Type 1</strong> diabetes is an autoimmune condition in which the immune system attacks the insulin-producing cells in the pancreas. It is not caused by eating sugar. Meanwhile, <strong>Type 2</strong> diabetes develops when the body becomes resistant to insulin or does not produce enough insulin to maintain normal blood glucose levels.</p>
+        <p>Its development is influenced by several factors, including genetics, family history, lifestyle, and other health conditions.</p>
+      </div>
+    </article>
+
+    <!-- RIGHT photo -->
+    <figure class="article-img article-img--right">
+      <img src="images/article-candy-right.png" alt="Colorful hard candies and gummies">
+    </figure>
+  </div>
+</main>
+
+<!-- ================= FOOTER (structure only, add your content) ================= -->
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-col"><!-- Logo / short description --></div>
+    <div class="footer-col"><h4><!-- Column title --></h4><ul><!-- <li><a href="#">Link</a></li> --></ul></div>
+    <div class="footer-col"><h4><!-- Column title --></h4><ul><!-- links --></ul></div>
+    <div class="footer-col"><h4><!-- Column title --></h4><ul><!-- links --></ul></div>
+  </div>
+  <div class="footer-bottom"><!-- Copyright / legal --></div>
+</footer>
+
+</body>
+</html>
+
